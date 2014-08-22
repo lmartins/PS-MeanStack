@@ -8,6 +8,7 @@
     "angular": "~1.2.22",
     "angular-resource": "~1.2.22",
     "angular-route": "~1.2.22",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "angular-mocks": "~1.2.22"
   }
 }

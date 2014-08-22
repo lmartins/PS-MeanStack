@@ -1,0 +1,8 @@
+{
+  "name": "Angular Get Started",
+  "paths": [],
+  "local": [],
+  "dependencies": {
+    "component/query": "*"
+  }
+}

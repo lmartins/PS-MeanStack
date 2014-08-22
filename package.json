@@ -34,6 +34,10 @@
     "script-loader": "^0.6.0",
     "webpack": "^1.3.3-beta2"
   },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.0.x"
+  },
   "browser": {
     "jquery": "./app/assets/js/lib/jquery"
   }

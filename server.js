@@ -19,7 +19,12 @@ app.use(sass.middleware({
 }));
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb://localhost/multivision');
+if (env === 'development') {
+  mongoose.connect('mongodb://localhost/multivision');
+} else {
+  mongoose.connect('mongodb://lmartins:cosmo9@kahana.mongohq.com:10003/multivision');
+}
+
 var db = mongoose.connection;
 db.on('error', console.log.bind(console, 'Connection error...'));
 db.once('open', function callback() {
@@ -41,6 +46,6 @@ app.get('*', function (req, res) {
   });
 });
 
-var port = 3030;
+var port = process.env.PORT || 3030;
 app.listen(port);
 console.log('Listening on port ' + port + '...');

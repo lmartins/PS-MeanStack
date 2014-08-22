@@ -1,3 +1,18 @@
 body{
   border: 1px solid red;
+  padding-top: 61px;
+}
+
+footer{
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+}
+
+.navbar-form .form-group{
+  margin-left: 10px;
+}
+.navbar-form button{
+  margin-left: 10px;
 }

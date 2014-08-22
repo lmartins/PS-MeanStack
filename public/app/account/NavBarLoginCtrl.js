@@ -1,4 +1,4 @@
-angular.module('app').controller('NavBarLoginCtrl', function ($scope, $http, Identity, Notifier, mvAuth) {
+angular.module('app').controller('NavBarLoginCtrl', function ($scope, $http, $location, Identity, Notifier, mvAuth) {
   $scope.identity = Identity;
 
   $scope.signin = function (username, password) {
@@ -10,5 +10,14 @@ angular.module('app').controller('NavBarLoginCtrl', function ($scope, $http, Ide
       }
     })
   };
+
+  $scope.signout = function () {
+    mvAuth.logoutUser().then(function () {
+      $scope.username = "";
+      $scope.password = "";
+      Notifier.notify('Logged of');
+      $location.path('/');
+    })
+  }
 
 });

@@ -1,10 +1,13 @@
 {
   "author": "Luis Martins",
-  "name": "AngularWebsite",
+  "name": "MEANStack",
   "version": "0.1.0",
   "dependencies": {
     "jquery": "~2.1.1",
-    "satellizer": "~0.3.2",
-    "angular-ui-router": "~0.2.10"
+    "toastr": "~2.0.3",
+    "angular": "~1.2.22",
+    "angular-resource": "~1.2.22",
+    "angular-route": "~1.2.22",
+    "bootstrap": "~3.2.0"
   }
 }

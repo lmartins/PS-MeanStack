@@ -2,13 +2,18 @@
   "author": "Luis Martins",
   "name": "MEANStack",
   "version": "0.1.0",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.6.5",
+    "express": "^4.8.5",
+    "jade": "^1.5.0",
+    "mongoose": "^3.8.15",
+    "morgan": "^1.2.3",
+    "node-sass": "^0.9.3"
+  },
+  "devDependencies": {
     "browser-sync": "^1.3.5",
     "component-webpack-plugin": "^0.2.1",
     "css-loader": "^0.7.1",
-    "express": "^4.8.5",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "0.0.8",
     "gulp-changed": "^1.0.0",
@@ -26,11 +31,7 @@
     "gulp-util": "^3.0.0",
     "gulp-watch": "^0.6.9",
     "html-loader": "^0.2.2",
-    "jade": "^1.5.0",
-    "mongoose": "^3.8.15",
-    "morgan": "^1.2.3",
     "ngmin-webpack-plugin": "^0.1.3",
-    "node-sass": "^0.9.3",
     "script-loader": "^0.6.0",
     "webpack": "^1.3.3-beta2"
   },
